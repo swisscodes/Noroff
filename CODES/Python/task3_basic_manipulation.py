@@ -23,3 +23,28 @@ This is not an official comment,
 but Python ignores it because it is not 
 assigned to any variable.
 """
+
+# ==========================================
+# MODERN PYTHON GUIDE: ADVANCED F-STRINGS & FORMATTING
+# ==========================================
+
+# 1. Self-Documenting Expressions / Debugging with '=' (Python 3.8+)
+# Prints the variable name AND value automatically:
+print(f"\n--- Debugging Specifier ---")
+print(f"{product_name=}, {price=:.2f}, {quantity=}")
+
+# 2. Number Formatting (Thousands Separators, Percentages, Currency)
+large_number = 1_000_000.75
+ratio = 0.8542
+print("\n--- Advanced Numeric Formats ---")
+print(f"Comma separator:    {large_number:,.2f}")
+print(f"Underscore separator:{large_number:_.2f}")
+print(f"Percentage:         {ratio:.1%}")
+
+# 3. Center Alignment and Fill Characters
+title = "INVOICE SUMMARY"
+print("\n--- Alignment & Fill ---")
+print(f"{title:=^35}")
+print(f"{'Item':<15} {'Qty':^7} {'Total':>10}")
+print(f"{product_name:<15} {quantity:^7} {price * quantity:>10,.2f}")
+
