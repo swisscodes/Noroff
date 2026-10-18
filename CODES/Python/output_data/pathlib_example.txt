@@ -1,0 +1,2 @@
+Written quickly with Path.write_text()!
+Appended using target_file.open().

@@ -1,0 +1,12 @@
+{
+    "course": "Noroff Python Programming",
+    "topic": "File Handling",
+    "best_practices": [
+        "Always use 'with open(...)'",
+        "Always specify encoding='utf-8'",
+        "Use pathlib for file paths",
+        "Handle potential IO exceptions"
+    ],
+    "is_active": true,
+    "version": 1.0
+}
